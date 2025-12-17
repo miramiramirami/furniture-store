@@ -36,3 +36,7 @@ https://github.com/user-attachments/assets/f023ea0f-051b-4ef5-ae6b-bd5b4df001ce
   - Срок жизни длинный
 
 https://github.com/user-attachments/assets/d497652c-7527-4b4f-a10d-6d72dc4dfdaa
+
+## Добавление и удаление из избранного
+
+https://github.com/user-attachments/assets/df530f1c-9519-4d7e-ad9b-c5b6cf3465d6
