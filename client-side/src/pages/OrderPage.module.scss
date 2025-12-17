@@ -1,0 +1,60 @@
+.orderContainer {
+	max-width: 1520px;
+	margin: 0 auto;
+	padding: 40px;
+
+	.orderNumber {
+		font-size: 32px;
+		font-family: 'Etude Noire Light';
+		margin-bottom: 16px;
+	}
+
+	p {
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+
+	.orderItemsGrid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 16px;
+		margin-bottom: 16px;
+	}
+
+	.orderStatus,
+	.orderItem {
+		border: 0.5px solid rgba(0, 0, 0, 0.473);
+		max-width: fit-content;
+		padding: 12px 24px;
+		border-radius: 15px;
+		margin-top: 16px;
+	}
+
+	.orderItem {
+		border: 0.5px solid rgba(0, 0, 0, 0.25);
+
+		img {
+			border-radius: 15px;
+			width: 250px;
+			height: 200px;
+			margin-bottom: 14px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+
+	.statusBlock {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.paymentId,
+	.totalPrice {
+		margin-top: 16px;
+		font-family: 'Etude Noire Light';
+		font-size: 24px;
+	}
+}

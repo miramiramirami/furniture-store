@@ -1,0 +1,110 @@
+.listTitle {
+	font-size: 32px;
+}
+
+.listUpside {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+
+// table
+
+.table {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+.tableRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 24px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.categoryTitle {
+	font-weight: 500;
+	width: 150px;
+}
+
+.actions {
+	display: flex;
+	gap: 8px;
+
+	button,
+	.button {
+		padding: 8px 12px;
+		border-radius: 15px;
+		cursor: pointer;
+		border: none;
+	}
+
+	.editBtn {
+		@apply border-b-2 border-blue-600 text-blue-600 font-semibold bg-blue-50;
+	}
+
+	.deleteBtn {
+		@apply border-b-2 border-red-600 text-red-600 font-semibold bg-red-50;
+	}
+}
+
+.productPrice {
+	padding-left: 200px;
+}
+
+// table
+
+// modalDelete
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modalContent {
+	background-color: white;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	min-width: 400px;
+	max-width: 600px;
+	text-align: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.modalContent p {
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+}
+
+.modalContent button {
+	padding: 0.5rem 1rem;
+	margin: 0 0.5rem;
+	border-radius: 0.25rem;
+	border: none;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.modalContent button:first-of-type {
+	background-color: #ef4444;
+	color: white;
+}
+
+.modalContent button:last-of-type {
+	background-color: #f3f4f6;
+	color: #111827;
+}
+
+// modalDelete

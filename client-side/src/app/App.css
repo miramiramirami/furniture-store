@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Etude Noire Regular';
+	src: url('./static/fonts/Etude\ Noire\ Regular.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Etude Noire Light';
+	src: url('./static/fonts/Etude\ Noire\ Light.ttf') format('truetype');
+	font-style: normal;
+}
+
+* {
+	font-family: 'Etude Noire Regular', sans-serif;
+}
+
+.content-container {
+	max-width: 1440px;
+	margin: 0 auto;
+}

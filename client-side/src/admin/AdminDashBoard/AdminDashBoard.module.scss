@@ -1,0 +1,26 @@
+.dashboardContent {
+	display: flex;
+}
+
+.dashboardLists {
+	padding: 24px;
+	width: 100%;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 24px;
+}
+
+.tabBtn {
+	@apply px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.active {
+	@apply border-b-2 border-blue-600 text-blue-600 font-semibold bg-blue-50;
+}

@@ -1,0 +1,59 @@
+.categoryCard {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 12px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+		border-radius: 12px;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		border-radius: 12px;
+	}
+
+	.categoryTitle {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		opacity: 0;
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+		.overlay {
+			opacity: 0.45;
+		}
+		.categoryTitle {
+			opacity: 1;
+		}
+	}
+}
+
+.large {
+	height: 600px;
+}
+
+.small {
+	height: 300px;
+}

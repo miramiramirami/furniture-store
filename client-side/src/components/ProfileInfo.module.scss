@@ -1,0 +1,43 @@
+.profileContainer {
+	max-width: 1520px;
+	margin: 0 auto;
+	padding: 0 40px;
+
+	.profileHeader {
+		@apply text-[24px] flex items-center w-full max-w-[1440px] mt-8 mb-8;
+		font-family: 'Etude Noire Light', sans-serif;
+
+		&::after {
+			content: '';
+			@apply block flex-1 ml-4 h-[0.5px] bg-black;
+		}
+	}
+
+	.profileInfo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 32px;
+	}
+
+	.profileButton {
+		background-color: black;
+		color: white;
+		padding: 12px 24px;
+	}
+
+	.profileEmail {
+		font-size: 24px;
+		font-family: 'Etude Noire Light', sans-serif;
+	}
+}
+
+.order {
+	border: 0.5px solid rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	padding: 18px 32px;
+	border-radius: 15px;
+	margin-bottom: 16px;
+}

@@ -1,0 +1,66 @@
+.overlay {
+	@apply fixed inset-0 bg-black bg-opacity-50 z-50;
+}
+
+.modal {
+	@apply bg-white h-full ml-auto w-full max-w-2xl flex flex-col;
+	color: black;
+	font-family: 'Etude Noire Light';
+}
+
+.header {
+	@apply flex justify-between items-center p-4 border-b;
+}
+
+.closeBtn {
+	@apply text-2xl cursor-pointer;
+}
+
+.content {
+	@apply p-4 overflow-auto flex-1 flex flex-col;
+}
+
+.empty {
+	@apply text-center py-8;
+}
+
+.item {
+	@apply flex justify-between items-center py-3 border-b gap-4;
+}
+
+.itemInfo {
+	@apply flex-1;
+}
+
+.quantityControls {
+	@apply flex items-center gap-2;
+}
+
+.quantityBtn {
+	@apply w-8 h-8 border cursor-pointer;
+}
+
+.removeBtn {
+	@apply bg-red-500 text-white px-3 py-1 rounded cursor-pointer;
+}
+
+.cartSummary {
+	@apply mt-auto border-t pt-4;
+}
+
+.total {
+	@apply text-xl font-bold mb-3;
+	font-family: 'Etude Noire Light';
+}
+
+.actions {
+	@apply flex gap-3;
+}
+
+.clearBtn {
+	@apply bg-gray-500 text-white px-4 py-2 rounded cursor-pointer;
+}
+
+.checkoutBtn {
+	@apply bg-black text-white text-white px-4 py-2 rounded cursor-pointer;
+}

@@ -1,0 +1,248 @@
+.heroSection {
+	width: 100%;
+	@apply flex items-start justify-center;
+
+	padding-top: 150px;
+
+	background: linear-gradient(
+		to bottom,
+		#e4d7c9 0%,
+		#b6aa9b7e 60%,
+		#ffffff 100%
+	);
+
+	height: fit-content;
+
+	.chair img {
+		@apply w-[800px] h-[800px];
+	}
+	.heroInfo {
+		@apply flex flex-col gap-2 w-[800px];
+		padding-left: 100px;
+		padding-top: 100px;
+	}
+
+	.heroHeader,
+	.subtitleHero,
+	.paragraphHero {
+		font-family: 'Etude Noire Light', sans-serif;
+	}
+
+	.heroHeader {
+		@apply text-[64px] tracking-[0.18em];
+	}
+
+	.subtitleHero {
+		@apply text-[30px] tracking-[0.18em];
+	}
+
+	.paragraphHero {
+		@apply text-[14px] mb-6;
+	}
+
+	.buttonHero {
+		@apply text-[18px] bg-black text-white px-12 py-4 inline-flex justify-center items-center w-max;
+	}
+}
+
+.categorySection {
+	@apply flex flex-col items-center w-full relative pb-10;
+
+	.categoryHeader {
+		@apply text-[40px] flex items-center w-full max-w-[1440px] mt-8;
+		font-family: 'Etude Noire Light', sans-serif;
+
+		&::after {
+			content: '';
+			@apply block flex-1 ml-4 h-[2px] bg-black;
+		}
+
+		z-index: 5;
+	}
+}
+
+.categoriesGrid {
+	@apply grid  w-full max-w-[1440px] px-6;
+
+	&::before {
+		content: '';
+		@apply absolute top-0 left-0 w-full h-[180px] pointer-events-none;
+		background: linear-gradient(
+			to bottom,
+			white 80%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		z-index: 3;
+	}
+
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 400px 400px;
+
+	> :nth-child(1) {
+		grid-row: span 2;
+	}
+
+	// > :nth-child(2) {
+	// 	border-bottom: 3px solid #eaeaea;
+	// }
+}
+
+.categoryCard {
+	@apply relative w-full h-full overflow-hidden cursor-pointer;
+
+	&:hover .overlay {
+		opacity: 0.45;
+	}
+
+	&:hover .categoryTitle {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.categoryImage {
+	@apply w-full h-full object-cover transition-all duration-500;
+}
+
+.overlay {
+	@apply absolute inset-0 bg-black opacity-0 transition-opacity duration-300;
+}
+
+.categoryTitle {
+	@apply absolute top-1/2 left-1/2 text-white text-3xl font-light opacity-0
+	transition-all duration-300;
+	transform: translate(-50%, -50%) scale(0.95);
+	pointer-events: none;
+}
+
+.productsSection {
+	@apply flex flex-col items-center w-full relative pb-20;
+
+	.productsHeader {
+		@apply text-[40px] flex items-center w-full max-w-[1440px] mb-10;
+		font-family: 'Etude Noire Light', sans-serif;
+
+		&::after {
+			content: '';
+			@apply block flex-1 ml-4 h-[2px] bg-black;
+		}
+	}
+}
+
+.productsGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0 64px;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.productCard {
+	border: 0.5px solid rgba(0, 0, 0, 0.25);
+	padding: 15px;
+	border-radius: 15px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 12px 16px rgba(0, 0, 0, 0.15);
+	}
+}
+
+form {
+	h2 {
+		margin-bottom: 24px;
+		font-size: 24px;
+		font-family: 'Etude Noire Light';
+	}
+
+	h3 {
+		color: green;
+		margin-bottom: 16px;
+	}
+
+	input {
+		border: 1px solid #88888876;
+		border-radius: 15px;
+		padding: 8px 12px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 16px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 12px;
+	}
+
+	select {
+		display: block;
+		border: 1px solid #88888876;
+		border-radius: 15px;
+		padding: 8px 12px;
+		margin-bottom: 16px;
+	}
+
+	button {
+		background-color: black;
+		color: white;
+		padding: 12px 24px;
+		margin-top: 16px;
+	}
+}
+
+.authForm {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+
+	.error {
+		color: red;
+		margin-bottom: 24px;
+	}
+
+	input {
+		width: 400px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin: 24px 0;
+	}
+
+	button {
+		margin-bottom: 24px;
+	}
+
+	.changeFromButton {
+		color: blue;
+	}
+}
+
+.favoriteCard {
+	position: relative;
+	border: 0.5px solid #888888;
+	padding: 24px;
+	border-radius: 15px;
+
+	.favLinkProduct,
+	.favoriteDelete {
+		border: 0.5px solid #888888;
+		padding: 8px 12px;
+		border-radius: 15px;
+
+		&:hover {
+			color: rgba(0, 0, 0, 0.45);
+		}
+	}
+
+	.favLinkProduct {
+		margin-bottom: 24px;
+	}
+
+	.favoriteDelete {
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+	}
+}
