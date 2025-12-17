@@ -60,3 +60,11 @@ https://github.com/user-attachments/assets/73ffa3be-ca95-4302-8284-08d1ee1f89cc
 - Все заказы видны в личном кабинете
 
 https://github.com/user-attachments/assets/6f7802c2-9024-4561-b5b6-199163815c3f
+
+## Панель администратора
+
+- Запросы защищены middleware`ом на бэкенде
+- Страницы защищены внешне на фронтенде
+- Админ может удалять, добавлять, изменять категории и продукты, а так же просматривать заказы
+
+https://github.com/user-attachments/assets/a7851662-0948-4d91-b6e4-c19b9eb34a33
